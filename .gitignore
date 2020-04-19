@@ -2,7 +2,7 @@
 *~
 
 lib*/*.dll
-bin*/*
+bin*/*.lib
 *.exp
 *.ilk
 *.pdb
