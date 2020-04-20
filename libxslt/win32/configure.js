@@ -242,6 +242,8 @@ function configureXslt()
 			of.WriteLine(s.replace(/\@WITH_MODULES\@/, withModules? "1" : "0"));
 		} else if (s.search(/\@LIBXSLT_DEFAULT_PLUGINS_PATH\@/) != -1) {
 			of.WriteLine(s.replace(/\@LIBXSLT_DEFAULT_PLUGINS_PATH\@/, "NULL"));
+		} else if (s.search(/\@WITH_PROFILER\@/) != -1) {
+			of.WriteLine(s.replace(/\@WITH_PROFILER\@/, "0"));
 		} else
 			of.WriteLine(ln);
 	}

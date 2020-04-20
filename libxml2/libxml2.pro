@@ -4,6 +4,8 @@ TEMPLATE = lib
 
 TARGET = xml2
 
+win32:system(cd win32 && cscript configure.js compiler=msvc xml_debug=no mem_debug=no run_debug=no debug=no)
+
 win32:DEFINES += IN_LIBXML  _WIN32
 include($${PWD}/../nwDeployed.pri)
 

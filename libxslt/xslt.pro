@@ -4,6 +4,8 @@ TEMPLATE = lib
 
 TARGET = xslt
 
+win32:system(cd win32 && cscript configure.js compiler=msvc xslt_debug=no mem_debug=no debugger=no debug=no)
+
 win32:DEFINES += IN_LIBXSLT _WIN32
 
 include($${PWD}/../nwDeployed.pri)
