@@ -5,6 +5,7 @@ win32:SUBDIRS = \
     zlib \
     libbzip2 \
     xz \
+    zstd \
     libiconv \
     libxml2 \
     libxslt \

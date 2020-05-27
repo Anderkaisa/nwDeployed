@@ -5,10 +5,10 @@ TEMPLATE = lib
 TARGET = webp
 
 mac:CONFIG += static
-win32:DEFINES += WEBP_EXTERN=__declspec\(dllexport\)
+win32:msvc*:DEFINES += WEBP_EXTERN=__declspec\(dllexport\)
 
 DEFINES += WEBP_USE_THREAD
-win32:msvc*:DEFINES += __SSE__ __SSE2__ __AVX__ __AVX2__ __FMA__ __SSE4_1__
+#win32:msvc*:DEFINES += __SSE__ __SSE2__ __AVX__ __AVX2__ __FMA__ __SSE4_1__
 
 include($${PWD}/../nwDeployed.pri)
 
